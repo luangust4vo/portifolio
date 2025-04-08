@@ -1,0 +1,11 @@
+:root {
+    /* Color */
+    --font-primary: #fff;
+
+    /* Background Color */
+    --bg-primary: #242424;
+    --bg-secondary: #444444;
+
+    /* Button Color */
+    --btn-primary: #848484;
+}

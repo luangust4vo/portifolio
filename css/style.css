@@ -1,0 +1,66 @@
+@import url('./vars.css');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: var(--bg-primary);
+    color: var(--font-primary);
+    min-height: 100vh;
+    min-width: 100vw;
+}
+
+body a {
+    text-decoration: none;
+    color: var(--font-primary);
+}
+
+/* Navbar */
+.navbar {
+    background-color: var(--bg-secondary);
+    height: 4.5em;
+    width: 100vw;
+    position: sticky;
+    font-weight: bold;
+    font-size: large;
+}
+
+.navbar-container {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar-container ul {
+    list-style: none;
+    display: flex;
+    font-size: 1em;
+}
+
+.navbar-container ul li {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.navbar-container ul li a {
+    padding: 2em;
+}
+
+.navbar-container ul li:hover {
+    background-color: var(--bg-primary);
+}
+
+.mobile-menu {
+    display: none;
+}
+
+@media (max-width: 740px) {
+    .mobile-menu {
+        display: block;
+    }
+}
