@@ -25,7 +25,7 @@ a {
 
 /* Menu */
 .menu {
-    height: 100px;
+    height: 80px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -49,18 +49,20 @@ a {
     justify-content: center;
     align-items: center;
     cursor: pointer;
-    transition: background-color 0.3s ease, color 0.3s ease;
+    transition: background-color 0.3s ease, color 0.3s ease, font-size 0.2s ease;
 }
 
-.menu-items li:hover {
+.menu-items li:hover, .menu-items li:hover * {
     background-color: var(--bg-tertiary);
-    color: var(--font-secondary);
+    font-size: 1.1em;
+    color: var(--font-tertiary);
 }
 
 .menu-actions {
     display: flex;
     align-items: center;
     margin: 15px;
+    height: 100%;
 }
 
 .menu-actions button {
@@ -90,20 +92,32 @@ a {
 @media (max-width: 768px) {
     .menu {
         flex-direction: column;
-        height: auto;
+        height: 80px;
     }
 
     .menu-items {
         flex-direction: column;
-        align-items: center;
+        width: 100%;
+        display: none;
     }
 
     .menu-items li {
         width: 100%;
         text-align: center;
     }
-
     .menu-actions {
-        margin-top: 10px;
+        width: 100%;
+    }
+
+    .menu-actions .toggle-mobile-menu {
+        display: block;
+        background-color: var(--bg-secondary);
+        color: var(--font-primary);
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+        font-weight: bold;
+        transition: background-color 0.3s ease, color 0.3s ease;
     }
 }
