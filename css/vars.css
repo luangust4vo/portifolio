@@ -1,0 +1,17 @@
+:root {
+    --bg-primary: #f0f0f0;
+    --bg-secondary: #ffffff;
+    --bg-tertiary: #e0e0e0;
+    --font-primary: #333333;
+    --font-secondary: #666666;
+    --font-tertiary: #001b91;
+}
+
+[data-theme="dark"] {
+    --bg-primary: #121212;
+    --bg-secondary: #1e1e1e;
+    --bg-tertiary: #2c2c2c;
+    --font-primary: #ffffff;
+    --font-secondary: #b0b0b0;
+    --font-tertiary: #ffe600;
+}
