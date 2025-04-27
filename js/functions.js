@@ -3,23 +3,22 @@ const default_settings = {
         mode: 'light',
         icon: 'fa-moon'
     },
-    // "language": "pt-br"
+    language: "pt-br"
 };
 const settings = JSON.parse(localStorage.getItem('settings')) ?? default_settings;
 
-const saveSettings = (themeMode, themeIcon) => {
-    settings.theme.mode = themeMode;
-    settings.theme.icon = themeIcon;
+const saveSettings = ({ themeMode, themeIcon, language }) => {
+    if (typeof themeMode !== 'undefined') settings.theme.mode = themeMode;
+    if (typeof themeIcon !== 'undefined') settings.theme.icon = themeIcon;
+    if (typeof language !== 'undefined') settings.language = language;
 
     localStorage.setItem('settings', JSON.stringify(settings));
 }
 
 export const loadSettings = () => {
-    let current_theme = settings.theme.mode;
-    let current_icon = settings.theme.icon;
-
-    document.body.setAttribute('data-theme', current_theme);
-    document.getElementById('toggle-theme-icon').classList.add(current_icon);
+    document.body.setAttribute('data-theme', settings.theme.mode);
+    document.getElementById('toggle-theme-icon').classList.add(settings.theme.icon);
+    changeLanguage(settings.language);
 };
 
 export const changeTheme = () => {
@@ -32,6 +31,33 @@ export const changeTheme = () => {
     icon.classList.remove('fa-moon', 'fa-sun');
     icon.classList.add(current_icon);
 
-    saveSettings(current_theme, current_icon);
+    saveSettings({ themeMode: current_theme, themeIcon: current_icon });
 };
 
+export const changeLanguage = (current_language = null) => {
+    if (!current_language) {
+        current_language = settings.language === 'pt-br' ? 'en' : 'pt-br';
+    }
+
+    fetch(`../assets/json/lang.json`).then(res => res.json()).then(res => {
+        let lang = res[current_language];
+
+        document.querySelectorAll('[data-lang]').forEach((e) => {
+            let attr = e.getAttribute('data-lang');
+            if (attr === 'menu') {
+                [...e.children].forEach((li) => {
+                    li.children[0].innerHTML = lang.menu[li.id];
+                });
+            } else if (attr == 'section') {
+                e.children[0].innerHTML = lang.section[e.id].title;
+                e.children[1].innerHTML = lang.section[e.id].content;
+            } else if (attr == 'alt') {
+                e.setAttribute('alt', lang.alt[e.id]);
+            } else {
+                e.innerHTML = lang[attr];
+            }
+        });
+    });
+
+    saveSettings({ language: current_language });
+};

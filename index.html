@@ -15,21 +15,25 @@
 
 <body data-theme="light">
     <nav class="menu">
-        <ul class="menu-items" id="menu-items">
-            <li><a href="#about">Sobre</a></li>
-            <li><a href="#abilities">Habilidades</a></li>
-            <li><a href="#education">Educação</a></li>
-            <li><a href="#projects">Projetos</a></li>
-            <li><a href="#contact">Contato</a></li>
+        <ul class="menu-items" id="menu-items" data-lang="menu">
+            <li id="about"><a href="#about"></a></li>
+            <li id="abilities"><a href="#abilities"></a></li>
+            <li id="education"><a href="#education"></a></li>
+            <li id="projects"><a href="#projects"></a></li>
+            <li id="contact"><a href="#contact"></a></li>
         </ul>
 
         <div class="menu-actions">
-            <button id="toggle-mobile-menu" class="toggle-mobile-menu">
-                <i class="fas fa-bars" alt="Menu"></i>
+            <button id="toggle-mobile-menu" class="toggle-mobile-menu" data-lang="alt">
+                <i class="fas fa-bars"></i>
             </button>
 
-            <button id="toggle-theme" class="toggle-theme">
-                <i class="fas" alt="Botão para trocar de tema claro para escuro e vice-versa" id="toggle-theme-icon"></i>
+            <button id="toggle-language" class="toggle-language" data-lang="mode">
+                PT-BR
+            </button>
+
+            <button id="toggle-theme" class="toggle-theme" data-lang="alt">
+                <i class="fas" id="toggle-theme-icon"></i>
             </button>
         </div>
     </nav>
@@ -37,47 +41,37 @@
     <main class="content">
         <section id="intro">
             <div class="intro-container">
-                <img src="./assets/photo.png" alt="Sua Foto" id="profile-pic">
-                <h1>Luan Gustavo</h1>
-                <span>Fullstack Developer</span>
+                <img src="./assets/photo.png" id="profile-pic" data-lang="alt">
+                <h1></h1>
+                <span data-lang="area"></span>
             </div>
         </section>
 
         <div id="separator"></div>
 
-        <section id="about">
-            <h2>Sobre mim</h2>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam repellat eveniet sunt eos laudantium
-                tempore, quia dolorum possimus aperiam nobis a nostrum quisquam nulla adipisci autem earum dolore
-                excepturi corporis.</p>
+        <section id="about" data-lang="section">
+            <h2></h2>
+            <p></p>
         </section>
 
-        <section id="abilities">
-            <h2>Habilidades</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi incidunt maxime harum ipsam ex, fuga
-                ratione magnam repudiandae quam impedit optio est nemo ducimus magni veniam cumque inventore iste ipsa.
-            </p>
+        <section id="abilities" data-lang="section">
+            <h2></h2>
+            <p></p>
         </section>
 
-        <section id="education">
-            <h2>Minha formação</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio quidem eligendi rerum numquam qui,
-                perferendis sit odit ipsum. Sunt ullam consectetur laborum quod quisquam reiciendis, illo magni
-                voluptates facere. Officiis.</p>
+        <section id="education" data-lang="section">
+            <h2></h2>
+            <p></p>
         </section>
 
-        <section id="projects">
-            <h2>Meus projetos</h2>]
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iure dicta sequi sunt, eius nulla eaque
-                delectus iste facere omnis, provident rerum, beatae obcaecati reiciendis! Molestiae repellat iure
-                recusandae minus magni!</p>
+        <section id="projects" data-lang="section">
+            <h2></h2>
+            <p></p>
         </section>
 
-        <section id="contact">
-            <h2>Entre em contato</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, voluptates aspernatur? Laudantium
-                repellat dolores nulla tempore. Numquam consequuntur enim illo aliquam sunt dignissimos, adipisci illum
-                vitae? Ipsum accusantium minus harum?</p>
+        <section id="contact" data-lang="section">
+            <h2></h2>
+            <p></p>
         </section>
     </main>
 </body>

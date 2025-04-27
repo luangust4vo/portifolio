@@ -1,0 +1,78 @@
+{
+    "pt-br": {
+        "mode": "PT-BR",
+        "area": "Desenvolvedor Fullstack",
+        "menu": {
+            "about": "Sobre",
+            "abilities": "Habilidades",
+            "education": "Educação",
+            "projects": "Projetos",
+            "contact": "Contato"
+        },
+        "alt": {
+            "toggle-mobile-menu": "Botão para abrir o menu lateral",
+            "toggle-theme": "Botão para trocar de tema claro para escuro e vice-versa",
+            "profile-pic": "Foto do dono do portifólio, Luan Gustavo"
+        },
+        "section": {
+            "about": {
+                "title": "Sobre mim",
+                "content": "Placeholder"
+            },
+            "abilities": {
+                "title": "Habilidades",
+                "content": "Placeholder"
+            },
+            "education": {
+                "title": "Minha formação",
+                "content": "Placeholder"
+            },
+            "projects": {
+                "title": "Meus projetos",
+                "content": "Placeholder"
+            },
+            "contact": {
+                "title": "Entre em contato comigo",
+                "content": "Placeholder"
+            }
+        }
+    },
+    "en": {
+        "mode": "EN",
+        "area": "Fullstack Developer",
+        "menu": {
+            "about": "About",
+            "abilities": "Abilities",
+            "education": "Education",
+            "projects": "Projects",
+            "contact": "Contact"
+        },
+        "alt": {
+            "toggle-mobile-menu": "Open side menu button",
+            "toggle-theme": "Toggle theme button",
+            "profile-pic": "Picture owner portifolio, Luan Gustavo"
+        },
+        "section": {
+            "about": {
+                "title": "About me",
+                "content": "Placeholder"
+            },
+            "abilities": {
+                "title": "My Abilities",
+                "content": "Placeholder"
+            },
+            "education": {
+                "title": "My Academic Formation",
+                "content": "Placeholder"
+            },
+            "projects": {
+                "title": "My Projects",
+                "content": "Placeholder"
+            },
+            "contact": {
+                "title": "Contact me",
+                "content": "Placeholder"
+            }
+        }
+    }
+}
