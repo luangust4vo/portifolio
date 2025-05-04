@@ -1,6 +1,9 @@
-import { changeTheme, loadSettings, changeLanguage } from "./functions.js";
+import { changeTheme, loadSettings, changeLanguage, revealOnScroll } from "./functions.js";
 
-document.addEventListener('DOMContentLoaded', () => loadSettings());
+document.addEventListener('DOMContentLoaded', () => {
+    loadSettings();
+    revealOnScroll();
+});
 
 document.getElementById('toggle-theme').addEventListener('click', changeTheme);
 

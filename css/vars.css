@@ -1,10 +1,10 @@
 :root {
-    --bg-primary: #f0f0f0;
+    --bg-primary: #fafafa;
     --bg-secondary: #ffffff;
-    --bg-tertiary: #e0e0e0;
-    --font-primary: #333333;
-    --font-secondary: #666666;
-    --font-tertiary: #001b91;
+    --bg-tertiary: #f0f0f0;
+    --font-primary: #222222;
+    --font-secondary: #555555;
+    --font-tertiary: #0056b3;
 }
 
 [data-theme="dark"] {

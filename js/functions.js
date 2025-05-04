@@ -24,7 +24,7 @@ export const loadSettings = () => {
 export const changeTheme = () => {
     let current_theme = settings.theme.mode === 'light' ? 'dark' : 'light';
     let current_icon = settings.theme.icon === 'fa-moon' ? 'fa-sun' : 'fa-moon';
-        
+
     document.body.setAttribute('data-theme', current_theme);
 
     const icon = document.getElementById('toggle-theme-icon');
@@ -46,7 +46,8 @@ export const changeLanguage = (current_language = null) => {
             let attr = e.getAttribute('data-lang');
             if (attr === 'menu') {
                 [...e.children].forEach((li) => {
-                    li.children[0].innerHTML = lang.menu[li.id];
+                    const id = li.querySelector('a').getAttribute('href').replace('#', '');
+                    li.children[0].innerHTML = lang.menu[id];
                 });
             } else if (attr == 'section') {
                 e.children[0].innerHTML = lang.section[e.id].title;
@@ -60,4 +61,20 @@ export const changeLanguage = (current_language = null) => {
     });
 
     saveSettings({ language: current_language });
+};
+
+export const revealOnScroll = () => {
+    const sections = document.querySelectorAll('section');
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            const id = entry.target.getAttribute('id');
+
+            if (entry.isIntersecting) entry.target.classList.add('visible');
+        });
+    }, {
+        threshold: 0.3
+    });
+
+    sections.forEach(section => observer.observe(section));
 };
