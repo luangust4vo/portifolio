@@ -54,6 +54,10 @@ a {
 
 .menu-items li {
     height: 100%;
+}
+
+.menu-items li a {
+    height: 100%;
     padding: 10px 15px;
     display: flex;
     justify-content: center;
@@ -62,8 +66,7 @@ a {
     transition: background-color 0.3s ease, color 0.3s ease, font-size 0.2s ease;
 }
 
-.menu-items li:hover,
-.menu-items li:hover * {
+.menu-items li a:hover {
     background-color: var(--bg-tertiary);
     font-size: 1.1em;
     color: var(--font-tertiary);

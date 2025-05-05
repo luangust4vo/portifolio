@@ -40,7 +40,7 @@ export const changeLanguage = (current_language = null) => {
         current_language = settings.language === 'pt-br' ? 'en' : 'pt-br';
     }
 
-    fetch(`../assets/json/lang.json`).then(res => res.json()).then(res => {
+    fetch(`assets/lang.json`).then(res => res.json()).then(res => {
         const lang = res[current_language];
 
         document.querySelectorAll('[data-lang]').forEach((e) => {
