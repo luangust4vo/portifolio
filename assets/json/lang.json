@@ -17,23 +17,36 @@
         "section": {
             "about": {
                 "title": "Sobre mim",
-                "content": "Placeholder"
+                "content": "Olá, meu nome é Luan Gustavo e sou estudante de Engenharia de Software. Atualmente, estou me aprofundando principalmente no desenvolvimento back-end, mas também trabalho com front-end. Como um desenvolvedor iniciante, estou sempre buscando aprender e aprimorar minhas habilidades em diversas tecnologias e práticas do mundo da programação. Ao longo da minha jornada acadêmica, tenho focado em entender profundamente os fundamentos do desenvolvimento de software e estou animado com as oportunidades de aplicar esse conhecimento em projetos reais"
             },
             "abilities": {
                 "title": "Habilidades",
-                "content": "Placeholder"
+                "content": "Como estudante de Engenharia de Software e desenvolvedor em formação, adquiri experiência prática com as seguintes tecnologias:"
             },
             "education": {
                 "title": "Minha formação",
-                "content": "Placeholder"
+                "content": [
+                    {
+                        "institution": "Instituto Federal do Paraná (IFPR) – Campus Paranavaí",
+                        "course": "Técnico em Informática Integrado ao Ensino Médio",
+                        "period": "2019 – 2022",
+                        "description": "Curso técnico integrado ao ensino médio com foco em desenvolvimento de software, banco de dados, redes e fundamentos da computação. A formação combinou disciplinas técnicas e acadêmicas, preparando para o mercado de trabalho e para a continuidade dos estudos."
+                    },
+                    {
+                        "institution": "Instituto Federal do Paraná (IFPR) – Campus Paranavaí",
+                        "course": "Bacharelado em Engenharia de Software",
+                        "period": "2023 – atualmente",
+                        "description": "Graduação em andamento com foco em desenvolvimento de software, engenharia de requisitos, arquitetura de sistemas, testes, gestão de projetos e inovação tecnológica. O curso enfatiza projetos práticos, pesquisa aplicada e extensão universitária."
+                    }
+                ]
             },
             "projects": {
                 "title": "Meus projetos",
-                "content": "Placeholder"
+                "content": "Projetos desenvolvidos durante a graduação e cursos complementares. A maioria dos projetos estão disponíveis no meu GitHub, onde você pode conferir o código-fonte e as tecnologias utilizadas. Além disso, alguns projetos possuem links para acesso direto às aplicações em funcionamento. Estou sempre buscando novos desafios e oportunidades para aplicar meus conhecimentos e aprender mais sobre desenvolvimento de software. Se você tiver alguma sugestão ou projeto interessante, fique à vontade para entrar em contato comigo!"
             },
             "contact": {
                 "title": "Entre em contato comigo",
-                "content": "Placeholder"
+                "content": "Se quiser conversar ou tiver interesse em colaborar, é só me chamar ;)"
             }
         }
     },
@@ -55,23 +68,36 @@
         "section": {
             "about": {
                 "title": "About me",
-                "content": "Placeholder"
+                "content": "Hello, my name is Luan Gustavo, and I am a Software Engineering student. Currently, I am focusing mainly on back-end development, but I also work with front-end. As a beginner developer, I am always looking to learn and improve my skills in various technologies and practices in the software development world. Throughout my academic journey, I have focused on deeply understanding the fundamentals of software development, and I am excited about the opportunities to apply this knowledge in real-world projects"
             },
             "abilities": {
                 "title": "My Abilities",
-                "content": "Placeholder"
+                "content": "As a software engineering student and an aspiring developer, I have gained hands-on experience with the following technologies:"
             },
             "education": {
                 "title": "My Academic Formation",
-                "content": "Placeholder"
+                "content": [
+                    {
+                        "institution": "Federal Institute of Paraná (IFPR) – Paranavaí Campus",
+                        "course": "Technical Course in Computer Science Integrated with High School",
+                        "period": "2019 – 2022",
+                        "description": "Integrated technical course focusing on software development, databases, networks, and computer fundamentals. The program combined technical and academic subjects, preparing students for the job market and further studies."
+                    },
+                    {
+                        "institution": "Federal Institute of Paraná (IFPR) – Paranavaí Campus",
+                        "course": "Bachelor's Degree in Software Engineering",
+                        "period": "2023 – present",
+                        "description": "Ongoing undergraduate program focusing on software development, requirements engineering, system architecture, testing, project management, and technological innovation. The course emphasizes practical projects, applied research, and university extension."
+                    }
+                ]
             },
             "projects": {
                 "title": "My Projects",
-                "content": "Placeholder"
+                "content": "Projetcs developed during graduation and complementary courses. Most of the projects are available on my GitHub, where you can check the source code and the technologies used. In addition, some projects have links for direct access to the applications in operation. I am always looking for new challenges and opportunities to apply my knowledge and learn more about software development. If you have any suggestions or interesting projects, feel free to contact me!"
             },
             "contact": {
                 "title": "Contact me",
-                "content": "Placeholder"
+                "content": "If you want to talk or are interested in collaborating, just call me ;)"
             }
         }
     }
